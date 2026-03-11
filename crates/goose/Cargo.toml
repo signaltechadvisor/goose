@@ -15,7 +15,7 @@ tokio = { version = "1.43", features = ["full"] }
 reqwest = { version = "0.12.9", features = ["json", "rustls-tls-native-roots"], default-features = false }
 
 [dependencies]
-lru = "0.12"
+lru = "0.16"
 rmcp = { workspace = true, features = [
     "client",
     "reqwest",
@@ -79,18 +79,18 @@ rand = "0.8.5"
 utoipa = { version = "4.1", features = ["chrono"] }
 tokio-cron-scheduler = "0.14.0"
 urlencoding = "2.1"
-sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "sqlite", "chrono", "json"] }
+sqlx = { version = "0.8", features = ["runtime-tokio-rustls", "sqlite", "chrono", "json"] }
 
 # For Bedrock provider
 aws-config = { version = "1.5.16", features = ["behavior-version-latest"] }
 aws-smithy-types = "1.2.13"
-aws-sdk-bedrockruntime = "1.106.0"
+aws-sdk-bedrockruntime = "1.113.0"
 
 # For SageMaker TGI provider
-aws-sdk-sagemakerruntime = "1.62.0"
+aws-sdk-sagemakerruntime = "1.94.0"
 
 # For GCP Vertex AI provider auth
-jsonwebtoken = "9.3.1"
+jsonwebtoken = "10.3.0"
 
 blake3 = "1.5"
 fs2 = "0.4.3"
